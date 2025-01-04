@@ -30,7 +30,7 @@ const Navbar = () => {
   );
 
   return (
-    <div>
+    <div className="sticky top-0 z-50 backdrop-blur-md">
       <style>
         {`
           @keyframes colorChange {
@@ -66,10 +66,15 @@ const Navbar = () => {
             display: inline-block;
             animation: wave 1.5s infinite;
           }
+
+          .navbar-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+          }
         `}
       </style>
 
-      <div className={`navbar ${getNavbarColor()} text-white shadow-lg`}>
+      <div className={`navbar ${getNavbarColor()} text-white shadow-lg navbar-blur`}>
         {/* Navbar Start */}
         <div className="navbar-start">
           <div className="dropdown">
@@ -114,12 +119,12 @@ const Navbar = () => {
         </div>
 
         {/* Navbar End */}
-        <div  onClick={() => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  }} className="navbar-end">
+        <div onClick={() => {
+          const contactSection = document.getElementById("contact");
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }} className="navbar-end">
           <a className="btn btn-outline text-white hover:text-gray-100 border-white flex items-center gap-2">
             Say Hello <span className="wave-animation">👋</span>
           </a>

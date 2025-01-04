@@ -58,7 +58,7 @@ const Contact = () => {
               <p className="text-gray-600 flex items-center justify-center mb-3">
                 <FaEnvelope className="mr-2 text-xl text-indigo-600" />
                 <a href="mailto:habibapanna@gmail.com" className="text-indigo-600">
-                  habibapanna@gmail.com
+                  habibapanna49@gmail.com
                 </a>
               </p>
               <div className="flex justify-center space-x-4">
