@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Fade, Zoom, Bounce } from "react-awesome-reveal";
 
 const Banner = () => {
@@ -20,15 +21,61 @@ const Banner = () => {
                 deliver exceptional user experiences. Let’s build something
                 amazing together!
               </p>
-              <div  onClick={() => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  }} className="space-x-4">
+
+              {/* Social Media Links */}
+              <div className="flex justify-center lg:justify-start space-x-4 mt-6">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-600 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
+                >
+                  <FaFacebookF size={20} />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-400 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
+                >
+                  <FaTwitter size={20} />
+                </a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-700 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
+                >
+                  <FaLinkedinIn size={20} />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
+                >
+                  <FaGithub size={20} />
+                </a>
+              </div>
+
+              <div className="flex gap-5">
+              <div
+                onClick={() => {
+                  const contactSection = document.getElementById("contact");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
                   Contact Me
                 </button>
+              </div>
+              <div>
+              <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
+                  Download Resume
+                </button>
+              </div>
               </div>
             </div>
           </Fade>

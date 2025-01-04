@@ -33,6 +33,31 @@ const toolsData = [
     name: "Git",
     icon: "https://img.icons8.com/color/64/000000/git.png",
   },
+  {
+    id: 7,
+    name: "HTML",
+    icon: "https://img.icons8.com/color/64/000000/html-5--v1.png",
+  },
+  {
+    id: 8,
+    name: "CSS",
+    icon: "https://img.icons8.com/color/64/000000/css3.png",
+  },
+  {
+    id: 9,
+    name: "DaisyUI",
+    icon: "https://img.icons8.com/ios-filled/64/000000/box.png",
+  },
+  {
+    id: 10,
+    name: "Node.js",
+    icon: "https://img.icons8.com/color/64/000000/nodejs.png",
+  },
+  {
+    id: 11,
+    name: "MongoDB",
+    icon: "https://img.icons8.com/color/64/000000/mongodb.png",
+  },
 ];
 
 const Tools = () => {
@@ -50,10 +75,10 @@ const Tools = () => {
       >
         {toolsData.map((tool) => (
           <Zoom key={tool.id}>
-            <div className="group mx-4 relative bg-gray-800 text-white  rounded-lg p-4 transition-transform transform scale-105 shadow-2xl">
+            <div className="group mx-4 relative bg-gray-800 text-white rounded-lg p-4 transition-transform transform scale-105 shadow-2xl hover:scale-110">
               {/* Lighting Effect */}
-              <div className="absolute inset-0 rounded-lg blur-lg bg-gradient-to-r from-blue-500 to-purple-500 opacity-100 transition-opacity duration-300"></div>
-              
+              <div className="absolute inset-0 rounded-lg blur-lg bg-gradient-to-r from-blue-500 to-purple-500 opacity-80 transition-opacity duration-300 group-hover:opacity-100"></div>
+
               {/* Card Content */}
               <div className="relative z-10">
                 <img

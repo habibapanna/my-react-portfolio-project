@@ -55,7 +55,7 @@ const Navbar = () => {
           }
 
           .name-animation {
-            animation: colorChange 3s linear infinite;
+            animation: colorChange 4s linear infinite;
           }
 
           .logo-animation {
