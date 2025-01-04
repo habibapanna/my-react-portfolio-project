@@ -5,7 +5,7 @@ Welcome to my portfolio! This is where I showcase my skills, projects, and exper
 ## 🚀 Live Website
 
 Check out the live version of my portfolio:  
-**[my-react-portfolio-project-eta.vercel.app]**
+**[my-react-portfolio-project-eta.vercel.app](https://my-react-portfolio-project-eta.vercel.app)**
 
 ## 🛠️ Technologies Used
 
