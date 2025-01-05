@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
+import { send } from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -13,32 +14,49 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate form submission
-    toast.success("Your message has been sent successfully!", {
-      position: "top-center",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    send(
+      "service_k4tq1st", // Replace with your EmailJS Service ID
+      "template_15osyuq", // Replace with your EmailJS Template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      "RmvrQBL5wNi0oU3SW" // Replace with your EmailJS Public Key
+    )
+      .then(() => {
+        toast.success("Your message has been sent successfully!", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        toast.error("Failed to send message. Please try again.", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        console.error("Error:", err);
+      });
   };
 
   return (
-    <section id="contact" className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-20">
+    <section
+      id="contact"
+      className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-20"
+    >
       <Zoom>
         <div className="text-center">
           <h2 className="text-5xl text-white font-extrabold mb-8 tracking-wider">
             Get in Touch
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            I'm always open to new opportunities and collaborations! Feel free to reach out if you'd like to connect.
+            I'm always open to new opportunities and collaborations! Feel free
+            to reach out if you'd like to connect.
           </p>
         </div>
       </Zoom>
@@ -48,7 +66,9 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center space-y-8">
           <Fade delay={200}>
             <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs text-center">
-              <h3 className="text-2xl font-semibold mb-4 text-indigo-600">Contact Details</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-indigo-600">
+                Contact Details
+              </h3>
               <p className="text-gray-600 flex items-center justify-center mb-3">
                 <FaPhoneAlt className="mr-2 text-xl text-indigo-600" />
                 <a href="tel:01813626884" className="text-indigo-600">
@@ -57,7 +77,10 @@ const Contact = () => {
               </p>
               <p className="text-gray-600 flex items-center justify-center mb-3">
                 <FaEnvelope className="mr-2 text-xl text-indigo-600" />
-                <a href="mailto:habibapanna@gmail.com" className="text-indigo-600">
+                <a
+                  href="mailto:habibapanna@gmail.com"
+                  className="text-indigo-600"
+                >
                   habibapanna49@gmail.com
                 </a>
               </p>
