@@ -6,7 +6,18 @@ const AboutMe = () => {
     <section className="bg-gradient-to-r from-gray-800 via-gray-900 to-black py-16 text-white">
       <div className="container mx-auto max-w-5xl px-4">
         {/* Header */}
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 relative">
+          <span
+            className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 animate-text-glow"
+          >
+            About Me
+          </span>
+          <span
+            className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl font-extrabold text-gray-700 opacity-10"
+          >
+            About Me
+          </span>
+        </h2>
 
         {/* Content */}
         <div className="flex flex-col items-center gap-12">
@@ -66,12 +77,25 @@ const AboutMe = () => {
             }
           }
 
+          @keyframes textGlow {
+            0%, 100% {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+            }
+            50% {
+              text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+            }
+          }
+
           .animate-float {
             animation: float 3s ease-in-out infinite;
           }
 
           .animate-slide-in {
             animation: slideIn 1s ease-out;
+          }
+
+          .animate-text-glow {
+            animation: textGlow 2s ease-in-out infinite;
           }
         `}
       </style>

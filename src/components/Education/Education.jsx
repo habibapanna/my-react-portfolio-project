@@ -43,8 +43,8 @@ const Education = () => {
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               I am proud to have achieved a GPA of <span className="text-amber-400 font-bold">5.00</span>  
                <br />in both my <span className="text-amber-400 font-bold">Secondary School Certificate (SSC)</span> and 
-              <span className="text-amber-400 font-bold"> Higher Secondary Certificate (HSC)</span> examinations. 
-              Currently, I am pursuing my Honors in Mathematics at National University with an impressive CGPA.
+              <span className="text-amber-400 font-bold"> Higher Secondary Certificate (HSC)</span> examinations from <span className="text-amber-400 font-bold">Science</span>  group. 
+              Currently, I am pursuing my Honors in <span className="text-amber-400 font-bold">Mathematics</span> at <span className="text-amber-400 font-bold">National University</span> with an <span className="text-amber-400 font-bold">impressive CGPA</span>.
             </p>
           </Fade>
         </div>
