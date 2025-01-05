@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Bounce } from 'react-awesome-reveal';
 
 const Education = () => {
   const educationDetails = [
@@ -32,11 +32,24 @@ const Education = () => {
   return (
     <section className="bg-gradient-to-r from-black via-gray-900 to-black py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-12 text-white">
-          My Education
-        </h2>
+        {/* Animated Academic Achievements Section */}
+        <div className="text-center mb-12">
+          <Bounce>
+            <h2 className="text-5xl font-bold text-amber-500 mb-4">
+              Outstanding Academic Achievements
+            </h2>
+          </Bounce>
+          <Fade direction="up" delay={200}>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+              I am proud to have achieved a GPA of <span className="text-amber-400 font-bold">5.00</span>  
+               <br />in both my <span className="text-amber-400 font-bold">Secondary School Certificate (SSC)</span> and 
+              <span className="text-amber-400 font-bold"> Higher Secondary Certificate (HSC)</span> examinations. 
+              Currently, I am pursuing my Honors in Mathematics at National University with an impressive CGPA.
+            </p>
+          </Fade>
+        </div>
 
-        {/* Cards */}
+        {/* Education Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {educationDetails.map((education, index) => (
             <Fade direction="up" delay={index * 200} key={education.id}>
