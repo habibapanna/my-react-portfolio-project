@@ -3,14 +3,16 @@ import { FaFacebook, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-gray-300 py-10">
       <div className="container mx-auto px-4">
         {/* Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Profile Section */}
           <div className="text-center md:text-left mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold">Habiba Panna</h3>
-            <p className="mt-2">Passionate Front-End Developer</p>
+            <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600">
+              Habiba Panna
+            </h3>
+            <p className="mt-2 text-gray-400">Passionate Front-End Developer</p>
           </div>
 
           {/* Social Media Links */}
@@ -19,37 +21,37 @@ const Footer = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 transition"
+              className="hover:text-blue-600 transition transform hover:scale-125"
               aria-label="Facebook"
             >
-              <FaFacebook size={24} />
+              <FaFacebook size={28} />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-700 transition"
+              className="hover:text-blue-600 transition transform hover:scale-125"
               aria-label="LinkedIn"
             >
-              <FaLinkedin size={24} />
+              <FaLinkedin size={28} />
             </a>
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 transition"
+              className="hover:text-gray-400 transition transform hover:scale-125"
               aria-label="GitHub"
             >
-              <FaGithub size={24} />
+              <FaGithub size={28} />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 transition"
+              className="hover:text-blue-600 transition transform hover:scale-125"
               aria-label="Twitter"
             >
-              <FaTwitter size={24} />
+              <FaTwitter size={28} />
             </a>
           </div>
         </div>
@@ -59,11 +61,18 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center">
-          <p className="text-sm">
-            © {new Date().getFullYear()} Habiba Panna. All Rights Reserved.
+          <p className="text-sm text-gray-500">
+            © {new Date().getFullYear()} <span className="font-bold">Habiba Panna</span>. All Rights Reserved.
           </p>
         </div>
       </div>
+      <style>
+        {`
+          a:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+          }
+        `}
+      </style>
     </footer>
   );
 };
