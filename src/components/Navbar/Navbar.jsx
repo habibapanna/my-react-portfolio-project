@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Function to determine the navbar color based on the current route
   const getNavbarColor = () => {
@@ -16,7 +17,20 @@ const Navbar = () => {
       case '/review':
         return 'bg-gradient-to-r from-purple-400 to-pink-600';
       default:
-        return 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'; // Default color
+        return 'bg-black'; // Default color
+    }
+  };
+
+  const handleSayHelloClick = () => {
+    if (location.pathname === '/') {
+      // Scroll to the contact section if on the home page
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to the contact page
+      navigate('/contact');
     }
   };
 
@@ -75,7 +89,6 @@ const Navbar = () => {
       </style>
 
       <div className={`navbar ${getNavbarColor()} text-white shadow-lg navbar-blur`}>
-        {/* Navbar Start */}
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -111,23 +124,16 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Navbar Center */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-6">
             {links}
           </ul>
         </div>
 
-        {/* Navbar End */}
-        <div onClick={() => {
-          const contactSection = document.getElementById("contact");
-          if (contactSection) {
-            contactSection.scrollIntoView({ behavior: "smooth" });
-          }
-        }} className="navbar-end">
-          <a className="btn btn-outline text-white hover:text-gray-100 border-white flex items-center gap-2">
+        <div onClick={handleSayHelloClick} className="navbar-end">
+          <button className="btn btn-outline text-white hover:text-gray-100 border-white flex items-center gap-2">
             Say Hello <span className="wave-animation">👋</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
