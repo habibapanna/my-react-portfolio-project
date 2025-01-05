@@ -59,23 +59,31 @@ const Banner = () => {
               </div>
 
               <div className="flex gap-5">
-              <div
-                onClick={() => {
-                  const contactSection = document.getElementById("contact");
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
-                  Contact Me
-                </button>
-              </div>
-              <div>
-              <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
-                  Download Resume
-                </button>
-              </div>
+                {/* Contact Me Button */}
+                <div
+                  onClick={() => {
+                    const contactSection = document.getElementById("contact");
+                    if (contactSection) {
+                      contactSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
+                    Contact Me
+                  </button>
+                </div>
+
+                {/* Download Resume Button */}
+                <div>
+                  <a
+                    href="https://docs.google.com/document/d/1eRNzhOn5fF4C5U1EEMc-0qPsR4TlyVQTDtrg3MUhfpA/edit?usp=sharing"
+                    download
+                  >
+                    <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
+                      Download Resume
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </Fade>
