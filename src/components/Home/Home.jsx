@@ -24,7 +24,7 @@ const Home = () => {
             >
                 {/* Optional Overlay for Better Contrast */}
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div className="relative z-10 flex items-center justify-center h-full">
+                <div className="relative z-10 flex items-center text-center justify-center h-full">
                     <h2 className="text-white text-5xl font-bold">
                         Creativity at Its Best
                     </h2>
