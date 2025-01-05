@@ -4,7 +4,42 @@ import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaGithub } from "react-icons/f
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const projectsData = [
-  // Your existing projects data
+  {
+    id: 1,
+    image: "https://i.postimg.cc/CxsrbQfb/image.png",
+    description: "A dynamic e-commerce platform featuring a modern UI, product filtering, and a functional cart system.",
+    liveLink: "https://blog-website-7c3f1.web.app",
+  },
+  {
+    id: 2,
+    image: "https://i.postimg.cc/TwgR9xjt/image.png",
+    description: "A creative portfolio displaying front-end projects with responsive design using TailwindCSS.",
+    liveLink: "https://habibapanna.github.io/third-assignment-tailwind/",
+  },
+  {
+    id: 3,
+    image: "https://i.postimg.cc/HL5xSbd0/image.png",
+    description: "A social media app with features like real-time messaging, user profiles, and post sharing.",
+    liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",
+  },
+  {
+    id: 4,
+    image: "https://i.postimg.cc/K83vztkX/image.png",
+    description: "A task management app with drag-and-drop functionality, progress tracking, and detailed analytics.",
+    liveLink: "https://game-review-79374.web.app",
+  },
+  {
+    id: 5,
+    image: "https://i.postimg.cc/nVqK1GtV/image.png",
+    description: "A sleek landing page designed for a tech startup with smooth animations and mobile responsiveness.",
+    liveLink: "https://habibapanna.github.io/my-second-assignment/",
+  },
+  {
+    id: 6,
+    image: "https://i.postimg.cc/jq6NfqzL/image.png",
+    description: "A blog platform supporting markdown, dynamic content, and an intuitive user interface.",
+    liveLink: "https://b10-gadget-heaven-assignment.surge.sh",
+  },
 ];
 
 const Projects = () => {
