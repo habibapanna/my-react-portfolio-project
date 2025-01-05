@@ -1,47 +1,19 @@
 import React from "react";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const projectsData = [
-  {
-    id: 1,
-    image: "https://i.postimg.cc/CxsrbQfb/image.png",
-    description: "A dynamic e-commerce platform featuring a modern UI, product filtering, and a functional cart system.",
-    liveLink: "https://blog-website-7c3f1.web.app",
-  },
-  {
-    id: 2,
-    image: "https://i.postimg.cc/TwgR9xjt/image.png",
-    description: "A creative portfolio displaying front-end projects with responsive design using TailwindCSS.",
-    liveLink: "https://habibapanna.github.io/third-assignment-tailwind/",
-  },
-  {
-    id: 3,
-    image: "https://i.postimg.cc/HL5xSbd0/image.png",
-    description: "A social media app with features like real-time messaging, user profiles, and post sharing.",
-    liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",
-  },
-  {
-    id: 4,
-    image: "https://i.postimg.cc/K83vztkX/image.png",
-    description: "A task management app with drag-and-drop functionality, progress tracking, and detailed analytics.",
-    liveLink: "https://game-review-79374.web.app",
-  },
-  {
-    id: 5,
-    image: "https://i.postimg.cc/nVqK1GtV/image.png",
-    description: "A sleek landing page designed for a tech startup with smooth animations and mobile responsiveness.",
-    liveLink: "https://habibapanna.github.io/my-second-assignment/",
-  },
-  {
-    id: 6,
-    image: "https://i.postimg.cc/jq6NfqzL/image.png",
-    description: "A blog platform supporting markdown, dynamic content, and an intuitive user interface.",
-    liveLink: "https://b10-gadget-heaven-assignment.surge.sh",
-  },
+  // Your existing projects data
 ];
 
 const Projects = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
+  const handleGetInTouchClick = () => {
+    navigate("/contact"); // Navigate to the /contact route
+  };
+
   return (
     <section className="bg-gradient-to-r from-black via-gray-900 to-black py-16">
       {/* Header */}
@@ -109,12 +81,12 @@ const Projects = () => {
               <p className="text-gray-400 max-w-xl mx-auto">
                 I'm always open to new opportunities and collaborations. Let's create something amazing!
               </p>
-              <a
-                href="/contact"
+              <button
+                onClick={handleGetInTouchClick} // Attach the click handler
                 className="inline-block mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 hover:scale-110 transition-all duration-300"
               >
                 Get in Touch
-              </a>
+              </button>
             </div>
           </Fade>
         </div>

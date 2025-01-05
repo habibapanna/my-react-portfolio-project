@@ -120,7 +120,7 @@ const Navbar = () => {
               alt="Logo"
               className="h-10 w-10 rounded-full mr-2 logo-animation"
             />
-            <span className="name-animation">HabibaPanna</span>
+            <span className="name-animation">Habiba</span>
           </a>
         </div>
 
