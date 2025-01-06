@@ -1,5 +1,6 @@
 import React from 'react';
-import { Fade, Bounce } from 'react-awesome-reveal';
+import { Fade, Bounce, JackInTheBox } from 'react-awesome-reveal';
+import { FaCalculator } from 'react-icons/fa'; // Importing Font Awesome calculator icon
 
 const Education = () => {
   const educationDetails = [
@@ -73,6 +74,19 @@ const Education = () => {
               </div>
             </Fade>
           ))}
+        </div>
+
+        {/* Surprising Animated Section */}
+        <div className="mt-16 text-center">
+          <JackInTheBox>
+            <h3 className="text-4xl font-bold text-amber-400 mb-4 flex items-center justify-center">
+              <FaCalculator className="mr-4 text-amber-400 text-5xl" />  {/* Adding the math icon */}
+              Fun Fact!
+            </h3>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Did you know? Mathematics is not just about numbers; it's about patterns, logic, and problem-solving. My journey in Mathematics is not just academic; it's a gateway to understanding the universe better!
+            </p>
+          </JackInTheBox>
         </div>
       </div>
     </section>

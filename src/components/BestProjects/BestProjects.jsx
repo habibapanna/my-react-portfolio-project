@@ -30,7 +30,7 @@ const projectsData = [
   {
     id: 3,
     name: "Social Media App",
-    image: "https://i.postimg.cc/HL5xSbd0/image.png",
+    image: "https://i.postimg.cc/fyR4npg7/image.png",
     description: "A social media app with features like real-time messaging, user profiles, and post sharing.",
     technologies: "React, Firebase, Redux",
     liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",

@@ -18,15 +18,15 @@ const projectsData = [
   },
   {
     id: 3,
-    image: "https://i.postimg.cc/HL5xSbd0/image.png",
-    description: "A social media app with features like real-time messaging, user profiles, and post sharing.",
-    liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",
+    image: "https://i.postimg.cc/fyR4npg7/image.png",
+    description: "A task management app with drag-and-drop functionality, progress tracking, and detailed analytics.",
+    liveLink: "https://game-review-79374.web.app",
   },
   {
     id: 4,
-    image: "https://i.postimg.cc/K83vztkX/image.png",
-    description: "A task management app with drag-and-drop functionality, progress tracking, and detailed analytics.",
-    liveLink: "https://game-review-79374.web.app",
+    image: "https://i.postimg.cc/HL5xSbd0/image.png",
+    description: "A social media app with features like real-time messaging, user profiles, and post sharing.",
+    liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",
   },
   {
     id: 5,
