@@ -24,8 +24,7 @@ const AboutMe = () => {
           {/* Image Section */}
           <div className="lg:w-1/2 flex justify-center">
             <img
-              src="https://i.ibb.co/Wpp9Pm2/celebration-labour-day-with-3d-cartoon-portrait-working-woman.jpg"
-              alt="Girl Developing"
+              src="https://i.postimg.cc/DwYK0mzN/celebration-labour-day-with-3d-cartoon-portrait-working-woman-1.jpg"
               className="rounded-lg shadow-lg w-80 lg:w-96 animate-float"
             />
           </div>

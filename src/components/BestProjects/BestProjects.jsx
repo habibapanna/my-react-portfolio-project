@@ -6,7 +6,7 @@ const projectsData = [
     id: 1,
     name: "E-Commerce Platform",
     image: "https://i.postimg.cc/133W8Hnm/image.png",
-    description: "A dynamic e-commerce platform featuring a modern UI, product filtering, and a functional cart system.",
+    description: "A dynamic e-commerce platform featuring a modern UI, product filtering a functional system.",
     technologies: "React, Tailwind CSS, Firebase, Stripe API",
     liveLink: "https://blog-website-7c3f1.web.app",
     githubLink: "https://github.com/your-username/ecommerce-platform",
