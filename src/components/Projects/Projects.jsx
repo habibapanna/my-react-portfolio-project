@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 const projectsData = [
   {
     id: 1,
-    image: "https://i.postimg.cc/CxsrbQfb/image.png",
+    image: "https://i.postimg.cc/133W8Hnm/image.png",
     description: "A dynamic e-commerce platform featuring a modern UI, product filtering, and a functional cart system.",
     liveLink: "https://blog-website-7c3f1.web.app",
   },

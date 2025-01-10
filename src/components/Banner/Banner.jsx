@@ -93,7 +93,7 @@ const Banner = () => {
             <Bounce>
               <div className="max-w-md mt-8 lg:mt-0">
                 <img
-                  src="https://i.ibb.co/Wpp9Pm2/celebration-labour-day-with-3d-cartoon-portrait-working-woman.jpg"
+                  src="https://i.postimg.cc/DwYK0mzN/celebration-labour-day-with-3d-cartoon-portrait-working-woman-1.jpg"
                   alt="Front-End Developer"
                   className="shadow-2xl rounded-xl transition-transform transform hover:scale-110"
                 />
