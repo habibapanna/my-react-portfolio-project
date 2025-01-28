@@ -76,7 +76,7 @@ const Banner = () => {
                 {/* Download Resume Button */}
                 <div>
                   <a
-                    href="https://docs.google.com/document/d/1eRNzhOn5fF4C5U1EEMc-0qPsR4TlyVQTDtrg3MUhfpA/edit?usp=sharing"
+                    href="https://drive.google.com/file/d/1hwSVmgNAIGsg6se8B9aGzWFjcV1vqmJF/view?usp=sharing"
                     download
                   >
                     <button className="btn btn-primary bg-yellow-300 text-gray-900 border-none hover:bg-yellow-400 transition-transform transform hover:scale-105">
