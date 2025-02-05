@@ -116,9 +116,8 @@ const Navbar = () => {
           </div>
           <a className="btn btn-ghost text-3xl font-bold flex items-center">
             <img
-              src="https://i.ibb.co/mDR3hx6/view-3d-woman-using-laptop.jpg"
-              alt="Logo"
-              className="h-10 w-10 rounded-full mr-2 logo-animation"
+              src="https://i.postimg.cc/4dvm6MVr/professional-development.png"
+              className="h-10 w-10 rounded-full mr-2"
             />
             <span className="name-animation">Habiba</span>
           </a>
