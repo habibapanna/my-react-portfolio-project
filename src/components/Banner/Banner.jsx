@@ -49,7 +49,7 @@ const Banner = () => {
                   <FaLinkedinIn size={20} />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/habibapanna"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
