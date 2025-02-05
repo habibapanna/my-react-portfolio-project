@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="flex space-x-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition transform hover:scale-125"
@@ -27,7 +27,7 @@ const Footer = () => {
               <FaFacebook size={28} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/habiba-panna-890a0434a/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition transform hover:scale-125"
@@ -36,7 +36,7 @@ const Footer = () => {
               <FaLinkedin size={28} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/habibapanna"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400 transition transform hover:scale-125"

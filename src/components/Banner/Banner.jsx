@@ -25,7 +25,7 @@ const Banner = () => {
               {/* Social Media Links */}
               <div className="flex justify-center lg:justify-start space-x-4 mt-6">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-600 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
@@ -41,7 +41,7 @@ const Banner = () => {
                   <FaTwitter size={20} />
                 </a>
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/habiba-panna-890a0434a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-700 hover:bg-gray-100 shadow-lg transition-transform transform hover:scale-110"
