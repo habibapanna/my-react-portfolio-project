@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 const projectsData = [
   {
     id: 1,
-    image: "https://i.postimg.cc/133W8Hnm/image.png",
-    description: "A dynamic e-commerce platform featuring a modern UI, product filtering, and a functional cart system.",
-    liveLink: "https://blog-website-7c3f1.web.app",
+    image: "https://i.postimg.cc/1X9DxshY/image.png",
+    description: "Management Camp Management System (MCMS). A comprehensive platform to manage camps, participants, and organizers seamlessly. Secure login and role-based dashboard using Firebase Authentication.",
+    liveLink: "https://mcsc-project.web.app",
   },
   {
     id: 2,
@@ -24,9 +24,9 @@ const projectsData = [
   },
   {
     id: 4,
-    image: "https://i.postimg.cc/HL5xSbd0/image.png",
-    description: "A social media app with features like real-time messaging, user profiles, and post sharing.",
-    liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",
+    image: "https://i.postimg.cc/qMhGXBwp/image.png",
+    description: "New Artist Project: An artist-themed website built using React. Features a dynamic layout, responsive design, and sections for showcasing artworks, artist bio, and contact information.",
+    liveLink: "https://new-artist-project.vercel.app",
   },
   {
     id: 5,
@@ -75,7 +75,9 @@ const Projects = () => {
                   className="w-full h-56 object-cover transition-transform transform group-hover:scale-110 duration-500"
                 />
                 <div className="p-6">
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">{project.description}</p>
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
                   <a
                     href={project.liveLink}
                     target="_blank"

@@ -1,31 +1,30 @@
 import React, { useState } from "react";
-import { Bounce, Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Bounce, Fade, Zoom } from "react-awesome-reveal";
 
 const projectsData = [
   {
     id: 1,
-    name: "E-Commerce Platform",
-    image: "https://i.postimg.cc/133W8Hnm/image.png",
-    description: "A dynamic e-commerce platform featuring a modern UI, product filtering a functional system.",
-    technologies: "React, Tailwind CSS, Firebase, Stripe API",
-    liveLink: "https://blog-website-7c3f1.web.app",
-    githubLink: "https://github.com/your-username/ecommerce-platform",
-    details:
-      "This project includes a user-friendly shopping experience, real-time database updates, and secure payment integration using Stripe.",
-    challenges: "Implementing the cart's real-time updates and handling edge cases in payment processing.",
-    improvements: "Planning to add a wishlist feature and optimize the site's loading speed.",
+    name: "Management Camp Management System (MCMS)",
+    image: "https://i.postimg.cc/1X9DxshY/image.png",
+    description: "A comprehensive platform to manage camps, participants, and organizers seamlessly.",
+    technologies: "React, Firebase, Node.js, MongoDB Atlas",
+    liveLink: "https://mcsc-project.web.app",
+    githubLink: "https://github.com/your-username/mcms-project",
+    details: "This platform offers secure user authentication, role-based dashboards, and streamlined camp management for organizers and participants.",
+    challenges: "Implementing role-based access control and handling concurrent data updates.",
+    improvements: "Planning to add advanced reporting features and user analytics.",
   },
   {
     id: 2,
-    name: "Portfolio Website",
-    image: "https://i.postimg.cc/TwgR9xjt/image.png",
-    description: "A creative portfolio displaying front-end projects with responsive design using TailwindCSS.",
+    name: "New Artist Project",
+    image: "https://i.postimg.cc/qMhGXBwp/image.png",
+    description: "An artist-themed website built using React, showcasing the work of an artist with a dynamic layout.",
     technologies: "React, Tailwind CSS",
-    liveLink: "https://habibapanna.github.io/third-assignment-tailwind/",
-    githubLink: "https://github.com/your-username/portfolio",
-    details: "This project showcases my skills and projects with a modern and responsive design.",
-    challenges: "Making the website fully responsive and ensuring a consistent design across all pages.",
-    improvements: "Adding a blog section and improving accessibility features.",
+    liveLink: "https://new-artist-project.vercel.app",
+    githubLink: "https://github.com/your-username/artist-project",
+    details: "This project features responsive design, hover effects, and sections for recent artworks, artist biography, and contact information.",
+    challenges: "Creating an interactive layout that adapts well across screen sizes.",
+    improvements: "Planning to integrate a blog and e-commerce functionality for art sales.",
   },
   {
     id: 3,
@@ -35,8 +34,7 @@ const projectsData = [
     technologies: "React, Firebase, Redux",
     liveLink: "https://b10-a9-my-first-firebase-assignment.surge.sh",
     githubLink: "https://github.com/your-username/social-media-app",
-    details:
-      "This app allows users to connect, share posts, and communicate in real-time. It also includes profile customization options.",
+    details: "This app allows users to connect, share posts, and communicate in real-time. It also includes profile customization options.",
     challenges: "Handling real-time updates efficiently and ensuring data consistency across users.",
     improvements: "Planning to integrate video sharing and improve the UI for better user engagement.",
   },
@@ -70,20 +68,20 @@ const BestProjects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project, index) => (
             <Fade key={project.id} delay={index * 200}>
-              <div className="group relative bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-lg overflow-hidden shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 transform">
+              <div className="group relative bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-lg overflow-hidden shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 transform min-h-[400px] flex flex-col justify-between">
                 <img
                   src={project.image}
                   alt={`Project ${project.name}`}
                   className="w-full h-56 object-cover transition-transform transform group-hover:scale-110 duration-500"
                 />
-                <div className="p-6">
+                <div className="p-6 flex flex-col justify-between h-[200px]">
                   <h3 className="text-xl text-white font-bold mb-2">{project.name}</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
                     {project.description}
                   </p>
                   <button
                     onClick={() => handleViewDetails(project)}
-                    className="inline-block bg-gradient-to-r from-blue-800 text-white font-bold py-2 px-5 rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-blue-800 hover:to-sky-800 hover:scale-110 transition-all duration-300"
+                    className="mt-auto inline-block bg-gradient-to-r from-blue-800 text-white font-bold py-2 px-5 rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-blue-800 hover:to-sky-800 hover:scale-110 transition-all duration-300"
                   >
                     View More / Details
                   </button>
